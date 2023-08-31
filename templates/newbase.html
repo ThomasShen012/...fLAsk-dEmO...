@@ -36,7 +36,7 @@
             <div class="container-fluid">
 
                 <!--logo-->
-                <a type="button" class="navbar-brand" href="#">
+                <a type="button" class="navbar-brand" href="/">
                     <img src="/static/icon/home_icon.png" alt="home_icon" title="Home" width="40" height="40">
                 </a>
 
@@ -74,7 +74,6 @@
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="/dashboard">檢視會員資料</a></li>
                         <li><a class="dropdown-item" href="/user/update_user">修改會員資料</a></li>
-                        <li><a class="dropdown-item" href="#"></a></li>
 
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="/user/signout">登出</a></li>
@@ -92,7 +91,6 @@
 
                         {% endif %}
                     </ul>
-                    {% if session.logged_in%}  {% else %} {% endif %}
 
                     <a 
                         class="fa fa-ticket mx-3"
