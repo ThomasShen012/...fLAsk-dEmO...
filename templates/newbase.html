@@ -9,11 +9,12 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <!-- Font-Awesome CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="static/css/newstyle.css">
+
+        <!--link rel="stylesheet" href="static/css/newstyle.css">
         <link rel="stylesheet" href="/static/css/normalize.css">
         <link rel="stylesheet" href="/static/css/styles.css">
         <link rel="stylesheet" href="/static/css/card.css">
-        <link rel="stylesheet" href="/static/css/newstyles.css">
+        <link rel="stylesheet" href="/static/css/newstyles.css"-->
         
         <title> {% block title %} New Base {% endblock %}</title>
         
@@ -70,7 +71,7 @@
                     <ul class="dropdown-menu dropdown-menu-end">
                         {% if session.logged_in %}
                         <li><h6 class="dropdown-header"> Welcome <span  id="dropdown_user_name"></span></h6></li>
-                        <!--li><h class="dropdown-header">Dropdown header 2</h></li-->
+                        <li><h class="dropdown-header"> User </h></li>
 
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="/dashboard">檢視會員資料</a></li>
@@ -81,6 +82,7 @@
 
                         {% else %}
                         <li><h6 class="dropdown-header"> Welcome </h6></li>
+                        <li><h6 class="dropdown-header"> Visitor </h6></li>
 
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item disabled" href="/dashboard">檢視會員資料</a></li>
@@ -94,7 +96,7 @@
 
                     <a 
                         class="fa fa-ticket mx-3"
-                        href="#1" 
+                        href="#ticket" 
                         data-toggle="tooltip" data-placement="right" title="Ticket">
                         <title> Ticket </title>
                     </a>
