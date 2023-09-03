@@ -1,0 +1,41 @@
+/*
+body{
+    background-color: #e0e0e0;
+}
+*/
+
+.navbar-toggler{
+    color:white;
+}
+
+.navbar{
+    height:70px;
+    background-color: steelblue;
+}
+
+.nav-link{
+    color:gold;
+    font-size:25px;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.fa-ticket, .fa-user-circle{
+    font-size: 40px;
+    color:white;
+    margin-left:5px;
+    margin-right:5px;
+    text-decoration: none;
+}
+
+.fa-user-circle:hover, .fa-user-circle:active, .fa-ticket:hover, .fa-ticket:active{
+    /*font-size: 300%;*/
+    color:deepskyblue;
+}
+
+.card{
+    background-color:#e0e0e0;
+    height:auto;
+}
