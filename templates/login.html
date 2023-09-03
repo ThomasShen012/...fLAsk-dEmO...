@@ -1,0 +1,35 @@
+{% extends "newbase.html" %}
+
+{% block title %} Login | FRSTP {% endblock %}
+
+{% block content %}
+
+<div class="card mx-auto">
+    <h3 class="card-title text-center"> Login </h3>
+
+    <form method="POST" name="login_form">
+        
+        <!--Email-->
+        <div class="form-floating form-group mt-3">
+            <input type="email" class="form-control" id="email" name="email" placeholder="example@example.com" required>
+            <label for="email"> Email </label>
+        </div>
+
+        <!--Password-->
+        <div class="form-floating form-group mt-3">
+            <input type="password" class="form-control" id="password" name="password" placeholder="password" required>
+            <label for="password"> Password </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3 me-2"> Confirm </button>
+        <button type="reset" class="btn btn-secondary mt-3"> Clear All </button>
+
+    </form>
+
+    <div class="text-center mt-5">
+        <a class="btn btn-success" href="/user/register" role="button"> Create an account </a>
+    </div>
+
+</div>
+
+{% endblock %}
