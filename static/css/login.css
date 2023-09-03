@@ -1,6 +1,30 @@
 .card{
+    margin-top: 30px;
     background-color:#e0e0e0;
     width: 800px;
     height: auto;
     padding:5px 5px 10px;
 }
+
+.card-title{
+    font-weight: 900;
+}
+
+form{
+    padding: 3px 15px 3px;
+}
+/*
+.btn{
+    border: none;
+}
+*/
+.btn-primary{
+    color:black;
+    background-color: #F0E54B;
+}
+
+.btn-secondary{
+    color:black;
+    background-color: #F0E54B;
+}
+

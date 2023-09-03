@@ -5,12 +5,12 @@
 {% block content %}
 
 <div class="card mx-auto">
-    <h3 class="card-title text-center"> Login </h3>
+    <h3 class="card-title text-center mt-3"> Login </h3>
 
     <form method="POST" name="login_form">
         
         <!--Email-->
-        <div class="form-floating form-group mt-3">
+        <div class="form-floating form-group mt-1">
             <input type="email" class="form-control" id="email" name="email" placeholder="example@example.com" required>
             <label for="email"> Email </label>
         </div>
@@ -21,13 +21,17 @@
             <label for="password"> Password </label>
         </div>
 
-        <button type="submit" class="btn btn-primary mt-3 me-2"> Confirm </button>
-        <button type="reset" class="btn btn-secondary mt-3"> Clear All </button>
+        <div class="text-center mt-3 mb-0">
+            <button type="submit" class="btn btn-primary login-confirm w-25"> Confirm </button>
+            <!--button type="reset" class="btn btn-secondary mt-3"> Clear All </button-->
+        </div>
 
     </form>
 
-    <div class="text-center mt-5">
-        <a class="btn btn-success" href="/user/register" role="button"> Create an account </a>
+    <hr class="custom-line">
+
+    <div class="text-center">
+        <a class="btn btn-secondary w-25" href="/user/register" role="button"> Create an account </a>
     </div>
 
 </div>

@@ -1,11 +1,14 @@
+body{
+    background-color: #FDFCE5; /*primary: 50*/
+}
 
 .navbar-toggler{
-    color:white;
+    color:black;
 }
 
 .navbar{
     height:40px;
-    background-color: #EECE00;
+    background-color: #EECE00; /*primary: 600*/
 }
 
 .nav-link{
@@ -27,5 +30,11 @@
 }
 
 .fa-user-circle:hover, .fa-user-circle:active, .fa-ticket:hover, .fa-ticket:active, .fa-home:hover, .fa-home:active{
-    color:#616161;
+    color:#616161; /*gray 700*/
+}
+
+.btn{
+    /*text-transform: uppercase;*/
+    font-weight: 700;
+    padding: 6px 9px;
 }

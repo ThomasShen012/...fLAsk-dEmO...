@@ -30,7 +30,7 @@ def user_signup():
 
 @app.route('/user/login')
 def user_login():
-    return render_template('loginnn.html')
+    return render_template('login.html')
 
 @app.route('/dashboard/')
 @login_required
