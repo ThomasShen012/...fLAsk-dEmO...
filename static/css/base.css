@@ -1,8 +1,3 @@
-/*
-body{
-    background-color: #e0e0e0;
-}
-*/
 
 .navbar-toggler{
     color:white;
@@ -10,32 +5,27 @@ body{
 
 .navbar{
     height:70px;
-    background-color: steelblue;
+    background-color: #EECE00;
 }
 
 .nav-link{
-    color:gold;
+    color:black;
     font-size:25px;
+    font-weight: 700;
 }
 
 .dropdown-toggle::after {
     content: none;
 }
 
-.fa-ticket, .fa-user-circle{
+.fa-ticket, .fa-user-circle, .fa-home{
     font-size: 40px;
-    color:white;
+    color:black;
     margin-left:5px;
     margin-right:5px;
     text-decoration: none;
 }
 
-.fa-user-circle:hover, .fa-user-circle:active, .fa-ticket:hover, .fa-ticket:active{
-    /*font-size: 300%;*/
-    color:deepskyblue;
-}
-
-.card{
-    background-color:#e0e0e0;
-    height:auto;
+.fa-user-circle:hover, .fa-user-circle:active, .fa-ticket:hover, .fa-ticket:active, .fa-home:hover, .fa-home:active{
+    color:#616161;
 }

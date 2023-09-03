@@ -16,20 +16,9 @@
         <link rel="stylesheet" href="/static/css/card.css">
         <link rel="stylesheet" href="/static/css/newstyles.css"-->
         <link rel="stylesheet" href="/static/css/base.css">
+        <link rel="stylesheet" href="/static/css/login.css">
         
         <title> {% block title %} New Base {% endblock %}</title>
-        
-        <style>
-            body {
-                background-image: url('static/image/test_background.jpg');
-                
-                height: 100%;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-        </style>
-
     </head>
 
     <body>
@@ -39,9 +28,17 @@
             <div class="container-fluid">
 
                 <!--logo-->
-                <a type="button" class="navbar-brand" href="/">
-                    <img src="/static/icon/home_icon.png" alt="home_icon" title="Home" width="40" height="40">
+                <a 
+                    class="fa fa-home" 
+                    href="/"
+                    data-toggle="tooltip" 
+                    data-placement="right" 
+                    title="Home">
+                    <title> Home </title>
                 </a>
+                <!--a type="button" class="navbar-brand" href="/">
+                    <img src="/static/icon/home_icon.png" alt="home_icon" title="Home" width="40" height="40">
+                </a-->
 
                 <div class="collapse navbar-collapse bg-faded" id="mynavbar">
                     <ul class="navbar-nav">
@@ -54,6 +51,15 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#"> Link3 </a>
                         </li>
+                        <!--li class="nav-item">
+                            <b><a class="nav-link" href="#"> Link1 </a></b>
+                        </li>
+                        <li class="nav-item">
+                            <b><a class="nav-link" href="#"> Link2 </a></b>
+                        </li>
+                        <li class="nav-item">
+                            <b><a class="nav-link" href="#"> Link3 </a></b>
+                        </li-->
                     </ul>
                 </div>
 
@@ -71,8 +77,8 @@
 
                     <ul class="dropdown-menu dropdown-menu-end">
                         {% if session.logged_in %}
-                        <li><h6 class="dropdown-header"> Welcome <span  id="dropdown_user_name"></span></h6></li>
-                        <li><h class="dropdown-header"> User </h></li>
+                        <li><h6 class="dropdown-header"> Welcome, <span  id="dropdown_user_name"></span></h6></li>
+                        <li><h class="dropdown-header"> Member  </h></li>
 
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="/dashboard">檢視會員資料</a></li>
@@ -83,7 +89,7 @@
 
                         {% else %}
                         <li><h6 class="dropdown-header"> Welcome </h6></li>
-                        <li><h6 class="dropdown-header"> Visitor </h6></li>
+                        <li><h6 class="dropdown-header"> Guest </h6></li>
 
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item disabled" href="/dashboard">檢視會員資料</a></li>
@@ -108,7 +114,7 @@
         </nav>
 
         {% block content %}
-        <h1 align="center"> This is the NEW page </h1>
+
         {% endblock %}
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
