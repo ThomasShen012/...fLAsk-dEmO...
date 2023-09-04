@@ -13,14 +13,16 @@
 form{
     padding: 3px 15px 3px;
 }
-/*
+
 .btn{
-    border: none;
+    border-color: #F0E54B;
+    padding: 10px;
 }
-*/
+
 .btn-primary{
     color:black;
     background-color: #F0E54B;
+    font-weight: 600;
 }
 
 .btn-secondary{

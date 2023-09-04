@@ -30,7 +30,7 @@ body{
 }
 
 .fa-user-circle:hover, .fa-user-circle:active, .fa-ticket:hover, .fa-ticket:active, .fa-home:hover, .fa-home:active{
-    color:#616161; /*gray 700*/
+    color:#9E9E9E; /*gray 500*/
 }
 
 .btn{
