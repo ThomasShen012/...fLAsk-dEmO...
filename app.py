@@ -26,7 +26,7 @@ def home():
 
 @app.route('/user/register')
 def user_signup():
-    return render_template('newregister.html')
+    return render_template('register.html')
 
 @app.route('/user/login')
 def user_login():

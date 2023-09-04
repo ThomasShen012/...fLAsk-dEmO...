@@ -1,5 +1,5 @@
 body{
-    background-color: #FDFCE5; /*primary: 50*/
+    background-color: #E1F5FE; /*lightblue:50*/
 }
 
 .navbar-toggler{
@@ -17,6 +17,24 @@ body{
     font-weight: 700;
 }
 
+.dropdown-menu{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.dropdown-header{
+    color:black;
+    font-weight:600;
+}
+
+.dropdown-item{
+    font-size:medium;
+}
+
+/*
+.dropdown-divider{
+    
+}
+*/
 .dropdown-toggle::after {
     content: none;
 }
@@ -30,7 +48,7 @@ body{
 }
 
 .fa-user-circle:hover, .fa-user-circle:active, .fa-ticket:hover, .fa-ticket:active, .fa-home:hover, .fa-home:active{
-    color:#9E9E9E; /*gray 500*/
+    color:#757575; /*gray 600*/
 }
 
 .btn{
