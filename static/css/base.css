@@ -9,6 +9,7 @@ body{
 .navbar{
     height:40px;
     background-color: #EECE00; /*primary: 600*/
+    min-width:min-content
 }
 
 .nav-link{
@@ -51,8 +52,10 @@ body{
     color:#757575; /*gray 600*/
 }
 
+/*
 .btn{
-    /*text-transform: uppercase;*/
+    text-transform: uppercase;
     font-weight: 700;
     padding: 6px 9px;
 }
+*/
