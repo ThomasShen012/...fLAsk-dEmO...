@@ -2,6 +2,7 @@ from flask import Flask, render_template, url_for, request, session, redirect
 import json
 import pymongo
 from functools import wraps
+from user.models import User
 
 app = Flask(__name__)
 app.secret_key = b'kushfuii7w4y7ry47ihwiheihf8774sdf4'
@@ -30,6 +31,7 @@ def user_signup():
 
 @app.route('/user/login')
 def user_login():
+    User().signout()
     return render_template('login.html')
 
 @app.route('/dashboard/')
